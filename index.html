@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App Landing Page</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/0413a50a0f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="logo">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div id="toggle-icon">
+        <i class="fas fa-bars" id="show"></i>
+      </div>
+      <nav>
+        <ul class="list">
+          <li><a href="#home" class="active">home</a></li>
+          <li><a href="#feature">feature</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#ui">ui ss</a></li>
+          <li><a href="#download">download</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main" id="home">
+      <h1>launch your app</h1>
+      <h1>with confidence and creativity</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, eius?
+      </p>
+      <button>download</button>
+    </div>
+
+    <!-- section services -->
+    <div class="services" id="feature">
+      <div class="service1">
+        <img src="./images/feature_3.png" alt="feature_1" />
+        <h2>development course</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing.
+        </p>
+      </div>
+      <div class="service1">
+        <img src="./images/feature_2.png" alt="feature_2" />
+        <h2>money saving services</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing.
+        </p>
+      </div>
+      <div class="service1">
+        <img src="./images/feature_3.png" alt="feature_3" />
+        <h2>usabality Interface</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing.
+        </p>
+      </div>
+    </div>
+
+    <!-- end section services -->
+
+    <!-- start about -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/frame.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>comes with all you need for daily life</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Libero, error excepturi reiciendis inventore neque architecto 
+                similique magnam perferendis eveniet perspiciatis.
+            </p>
+            <button>
+                get the app
+            </button>
+        </div>
+    </section>
+
+    <!-- end start -->
+
+    <!-- start presentation -->
+    <section class="presentation" id="ui">
+      <h2>uI presentation</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, corporis.
+      </p>
+      <div class="presentation-img">
+        <img src="./images/presentation.png" alt="">
+      </div>
+    </section>
+    <!-- end presentation -->
+
+    <!-- start frame -->
+    <section class="frame" id="download">
+      <div class="frame-img">
+        <img src="./images/download.png" alt="">
+      </div>
+      <div class="frame-text">
+        <h2>download and get tha app now</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Repellat sunt voluptate dolorum vero magni explicabo nisi iusto, eaque quos rem.
+        </p>
+        <button>download</button>
+      </div>
+    </section>
+
+    <!-- end frame -->
+
+    <!-- start contact -->
+
+    <div class="contact">
+      <h2>send me mail</h2>
+      <form action="#">
+        <input type="email" name="email" placeholder="example@gmail.com">
+        <input type="submit" value="Contact">
+      </form>
+    </div>
+
+    <!-- end contact -->
+
+    <script>
+      let show = document.querySelector("#show");
+      let list = document.querySelector(".list");
+
+      show.addEventListener("click", function() {
+        if (list.classList.contains("show-list")) {
+          list.classList.remove("show-list");
+        }
+        else{
+          list.classList.add("show-list");
+        }
+        // list.classList.toggle("show-list");
+      });
+
+    </script>
+  </body>
+</html>
